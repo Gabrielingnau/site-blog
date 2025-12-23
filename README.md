@@ -7,7 +7,7 @@ SiteBlog é uma landing page.
 O layout da aplicação está disponível no Figma:
 
 <a href="https://www.figma.com/design/7MfrYiuzC6d6oM53rjy1rd/Landing-Page-e-Blog--Community-?node-id=3-377&p=f&t=WAY6jrJu6NhUn0QU-0">
-  <img alt="Demonstração do projeto" src="./src/assets/img/TypeWeather.png">
+  <img alt="Demonstração do projeto" src="./public/images/Thumbnail.png">
 </a>
 
 ## 🚀 Começando
@@ -44,7 +44,9 @@ npm run dev
 
 ## 🛠️ Tecnologias
 
-* [Next.js](https://nextjs.org) - Biblioteca para interfaces de usuário        
+* [Next.js](https://nextjs.org) - Biblioteca para interfaces de usuário    
+* [ShadcnUi](https://ui.shadcn.com) - Um conjunto de componentes lindamente projetados    
+* [Tailwindcss](https://tailwindcss.com) - Uma estrutura CSS de utilidade-first com classes
 * [Typescript](https://www.typescriptlang.org/) - Sintaxe para tipos  
 
 ---
