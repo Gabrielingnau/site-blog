@@ -47,7 +47,8 @@ npm run dev
 * [Next.js](https://nextjs.org) - Biblioteca para interfaces de usuário    
 * [ShadcnUi](https://ui.shadcn.com) - Um conjunto de componentes lindamente projetados    
 * [Tailwindcss](https://tailwindcss.com) - Uma estrutura CSS de utilidade-first com classes
-* [Typescript](https://www.typescriptlang.org/) - Sintaxe para tipos  
+* [Typescript](https://www.typescriptlang.org/) - Sintaxe para tipos 
+* [Contentlayer](https://contentlayer.dev) - valida e transforma seu conteúdo em Tipo Dados JSON 
 
 ---
 # ⌨️ com ❤️ por [Gabriel Lingnau](https://www.linkedin.com/in/gabriel-lingnau-3bb17b266/)
