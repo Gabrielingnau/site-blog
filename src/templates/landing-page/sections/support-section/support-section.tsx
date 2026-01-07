@@ -1,4 +1,4 @@
-import { PaintbrushVertical } from "lucide-react";
+import { HeartHandshake, PaintbrushVertical, Store } from "lucide-react";
 import Image from "next/image";
 
 export function SupportSection() {
@@ -23,7 +23,9 @@ export function SupportSection() {
               <PaintbrushVertical className="h-5 w-5 text-white" />
             </div>
             <div className="space-y-2">
-              <h3 className="text-gray-100 text-sm font-sans">Personalize seu site</h3>
+              <h3 className="text-gray-100 text-sm font-sans">
+                Personalize seu site
+              </h3>
               <p className="text-gray-200 text-body-sm">
                 Adicione sua logo, favicon, cores no seu catalago e tenha tudo
                 com a sua cara.
@@ -31,28 +33,32 @@ export function SupportSection() {
             </div>
           </div>
 
-          <div className="w-auto p-6 flex flex-col items-start justify-center gap-4 bg-blue-400 rounded-xl">
-            <div className="flex items-center justify-center rounded-lg p-2 bg-blue-300">
-              <PaintbrushVertical className="h-5 w-5 text-white" />
+          <div className="w-auto p-6 flex flex-col items-start justify-center gap-4 bg-cyan-300 rounded-xl">
+            <div className="flex items-center justify-center rounded-lg p-2 bg-cyan-200">
+              <Store className="h-5 w-5 text-white" />
             </div>
             <div className="space-y-2">
-              <h3 className="text-gray-100 text-sm font-sans">Personalize seu site</h3>
+              <h3 className="text-gray-100 text-sm font-sans">
+                Venda de qualquer loja
+              </h3>
               <p className="text-gray-200 text-body-sm">
-                Adicione sua logo, favicon, cores no seu catalago e tenha tudo
-                com a sua cara.
+                Não importa a loja, o Site.Set permite que você insera qualquer
+                link de afiliado.
               </p>
             </div>
           </div>
 
           <div className="w-auto p-6 flex flex-col items-start justify-center gap-4 bg-blue-400 rounded-xl">
             <div className="flex items-center justify-center rounded-lg p-2 bg-blue-300">
-              <PaintbrushVertical className="h-5 w-5 text-white" />
+              <HeartHandshake className="h-5 w-5 text-white" />
             </div>
             <div className="space-y-2">
-              <h3 className="text-gray-100 text-sm font-sans">Personalize seu site</h3>
+              <h3 className="text-gray-100 text-sm font-sans">
+                Receba suporte amigável
+              </h3>
               <p className="text-gray-200 text-body-sm">
-                Adicione sua logo, favicon, cores no seu catalago e tenha tudo
-                com a sua cara.
+                Nossa equipe estará sempre pronta para te atender para ajudar no
+                que for preciso.
               </p>
             </div>
           </div>
