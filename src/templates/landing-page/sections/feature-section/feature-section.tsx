@@ -2,8 +2,8 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { Button } from "../ui/button";
-import { StoreFree } from "../store-free";
+import { Button } from "../../../../components/ui/button";
+import { StoreFree } from "../../../../components/store-free";
 
 export function FeatureSection() {
   return (
@@ -14,7 +14,7 @@ export function FeatureSection() {
             <div className="px-3 py-1.5 bg-blue-400">
               <p className="text-blue-200 text-body-tag uppercase">simples</p>
             </div>
-            <h2 className="text-gray-100 text-sm lg:text-lg">
+            <h2 className="text-gray-100 text-sm lg:text-lg font-sans">
               Crie um catálogo de produtos online em poucos minutos
             </h2>
           </div>
@@ -23,19 +23,19 @@ export function FeatureSection() {
             <div className="px-3 py-1.5 bg-blue-400">
               <p className="text-blue-200 text-body-tag uppercase">prático</p>
             </div>
-            <h2 className="text-gray-100 text-sm lg:text-lg">
+            <h2 className="text-gray-100 text-sm lg:text-lg font-sans">
               Venda para seu público através de uma plataforma única
             </h2>
           </div>
 
-          <div className="row-span-3 relative sm:row-span-2 col-span-1 sm:col-span-2 rounded-xl w-full flex flex-col sm:flex-row items-center sm:items-start justify-between p-6 lg:p-12 gap-4 bg-gray-500">
+          <div className="row-span-3 relative sm:row-span-2 col-span-1 sm:col-span-2 rounded-xl w-full flex flex-col sm:flex-row items-center sm:items-start justify-between p-6 lg:p-12 gap-3 sm:gap-4 bg-gray-500">
             <div className="flex flex-col items-start gap-4">
               <div className="px-3 py-1.5 bg-blue-400">
                 <p className="text-blue-200 text-body-tag uppercase">
                   personalizável
                 </p>
               </div>
-              <h2 className="text-gray-100 text-sm lg:text-lg">
+              <h2 className="text-gray-100 text-sm lg:text-lg font-sans">
                 Tenha uma loja online personalizada com a cara da sua marca
               </h2>
               <div className="absolute bottom-6 lg:bottom-12 left-6 lg:left-12 hidden sm:block">
@@ -46,6 +46,8 @@ export function FeatureSection() {
               <Image
                 src="/assets/illustration.png"
                 alt="Ilustração"
+                objectFit="contain"
+                sizes="(max-width: 768px) 50vw, 100vw"
                 fill
               />
             </div>

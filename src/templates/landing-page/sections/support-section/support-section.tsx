@@ -13,7 +13,7 @@ export function SupportSection() {
       />
       <div className="mx-auto px-4 sm:px-6 max-w-screen-standard">
         <div className="w-full flex items-center justify-center">
-          <h2 className="text-gray-100 md:text-xl text-md text-center max-w-lg">
+          <h2 className="text-gray-100 md:text-xl text-md text-center max-w-lg font-sans">
             Sua loja de afiliados, simples, do jeito que deveria ser
           </h2>
         </div>
@@ -23,7 +23,7 @@ export function SupportSection() {
               <PaintbrushVertical className="h-5 w-5 text-white" />
             </div>
             <div className="space-y-2">
-              <h3 className="text-gray-100 text-sm">Personalize seu site</h3>
+              <h3 className="text-gray-100 text-sm font-sans">Personalize seu site</h3>
               <p className="text-gray-200 text-body-sm">
                 Adicione sua logo, favicon, cores no seu catalago e tenha tudo
                 com a sua cara.
@@ -36,7 +36,7 @@ export function SupportSection() {
               <PaintbrushVertical className="h-5 w-5 text-white" />
             </div>
             <div className="space-y-2">
-              <h3 className="text-gray-100 text-sm">Personalize seu site</h3>
+              <h3 className="text-gray-100 text-sm font-sans">Personalize seu site</h3>
               <p className="text-gray-200 text-body-sm">
                 Adicione sua logo, favicon, cores no seu catalago e tenha tudo
                 com a sua cara.
@@ -49,7 +49,7 @@ export function SupportSection() {
               <PaintbrushVertical className="h-5 w-5 text-white" />
             </div>
             <div className="space-y-2">
-              <h3 className="text-gray-100 text-sm">Personalize seu site</h3>
+              <h3 className="text-gray-100 text-sm font-sans">Personalize seu site</h3>
               <p className="text-gray-200 text-body-sm">
                 Adicione sua logo, favicon, cores no seu catalago e tenha tudo
                 com a sua cara.

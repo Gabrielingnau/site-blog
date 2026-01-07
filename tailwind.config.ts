@@ -6,6 +6,7 @@ export default {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/templates/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     container: {
@@ -81,13 +82,13 @@ export default {
          🔤 TYPOGRAPHY
       ======================= */
       fontFamily: {
-        heading: ["var(--font-pt-sans-caption)"],
-        body: ["var(--font-inter)"],
+        sans: ["PT Sans Caption", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
 
-	  screens: {
-        "standard" : "1200px"
-	  },
+      screens: {
+        standard: "1200px",
+      },
 
       fontSize: {
         // Headings
@@ -102,7 +103,7 @@ export default {
         "body-md": ["16px", { lineHeight: "150%", fontWeight: "400" }],
         "body-sm": ["14px", { lineHeight: "150%", fontWeight: "400" }],
         "body-xs": ["12px", { lineHeight: "150%", fontWeight: "400" }],
-		"body-tag": ["12px", { lineHeight: "150%", fontWeight: "400" }],
+        "body-tag": ["12px", { lineHeight: "150%", fontWeight: "400" }],
 
         // Actions / UI
         "action-md": ["16px", { fontWeight: "500" }],
