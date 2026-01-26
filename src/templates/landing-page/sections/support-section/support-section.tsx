@@ -6,7 +6,7 @@ export function SupportSection() {
     <section className="py-10 sm:py-20 relative">
       <Image
         alt="background"
-        src="/assets/background-support.png"
+        src="/background-support.png"
         className="object-fit-cover -z-10"
         fill
         priority

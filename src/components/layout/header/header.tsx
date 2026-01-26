@@ -14,7 +14,7 @@ export function Header() {
           <Logo className="hidden sm:block"/>
           <Image
             alt="Icone da logo"
-            src="/assets/logo-icon.png"
+            src="/logo.png"
             width={40}
             height={40}
             className="block sm:hidden"

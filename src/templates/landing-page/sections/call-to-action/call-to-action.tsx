@@ -26,7 +26,7 @@ export function CallToACtion() {
       </div>
       <Image
         alt="background"
-        src="/assets/background-call-to-action.png"
+        src="/background-call-to-action.png"
         className="object-fit-cover -z-10"
         fill
         priority

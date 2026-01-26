@@ -37,7 +37,7 @@ export function HeroSection() {
         </div>
       </div>
       <Image
-        src="/assets/background.png"
+        src="/background.png"
         alt="Enfeite"
         width={400}
         height={380}

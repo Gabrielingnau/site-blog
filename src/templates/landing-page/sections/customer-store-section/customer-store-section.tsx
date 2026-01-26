@@ -8,7 +8,7 @@ const customersStore = [
     author: {
       name: "Annette Bones",
       role: "CEO na Anne Corp",
-      avatar: "/assets/annette.png",
+      avatar: "/annette.png",
     },
   },
   {
@@ -17,7 +17,7 @@ const customersStore = [
     author: {
       name: "Jacob Jones",
       role: "CEO na JJ Org",
-      avatar: "/assets/jacob.png",
+      avatar: "/jacob.png",
     },
   },
 ];

@@ -44,7 +44,7 @@ export function FeatureSection() {
             </div>
             <div className="w-full h-full relative">
               <Image
-                src="/assets/illustration.png"
+                src="/illustration.png"
                 alt="Ilustração"
                 objectFit="contain"
                 sizes="(max-width: 768px) 50vw, 100vw"
