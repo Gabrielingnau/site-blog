@@ -1,22 +1,36 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export function PostCard() {
+type Author = {
+  name: string;
+  avatar: string;
+}
+
+type PostCardProps = {
+  slug: string;
+  date: string;
+  image: string;
+  title: string;
+  description: string;
+  author: Author;
+}
+
+export function PostCard({ slug, date, image, title, description, author }: PostCardProps) {
   return (
     <Link
-      href="/blog/"
+      href={`/blog/${slug}`}
       className="max-w-xl rounded-xl bg-gray-600 border border-gray-400
         transition-all duration-200 hover:border-blue-300 p-2 group"
     >
       <div className="rounded-md space-y-3">
         <div className="relative rounded-sm">
           <div className="rounded-bl-xl p-2 pt-0 absolute bg-gray-600 top-0 right-0">
-            <span className="text-body-xs text-gray-300">20/12/24</span>
+            <span className="text-body-xs text-gray-300">{date}</span>
           </div>
 
           <Image
             alt="Imagem do post"
-            src="/assets/primeiro-post.png"
+            src={image}
             width={288}
             height={144}
             className="object-cover w-full h-40 object-center rounded-md"
@@ -26,12 +40,11 @@ export function PostCard() {
         <div className="p-2 flex flex-col items-start gap-3">
           <div className="space-y-2">
             <h2 className="text-xs text-gray-100">
-              Transformando seu negócio em uma loja virtual
+              {title}
             </h2>
-            <p className="text-body-xs text-gray-300">
+            <p className="text-body-xs text-gray-300 line-clamp-3">
               {" "}
-              Se você está buscando uma maneira simples e eficaz de vender seus
-              produtos online, o Site...
+              {description}
             </p>
           </div>
 
@@ -40,12 +53,12 @@ export function PostCard() {
             <div className="relative w-5 h-5 border border-blue-300 rounded-full">
               <Image
                 alt="Úsuario"
-                src="/annette.png"
+                src={author.avatar}
                 fill
                 className="object-cover object-center"
               />
             </div>
-            <span className="text-body-xs text-gray-300">Aspen Dokidis</span>
+            <span className="text-body-xs text-gray-300">{author.name}</span>
           </div>
         </div>
       </div>
