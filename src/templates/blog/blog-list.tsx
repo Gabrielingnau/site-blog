@@ -1,3 +1,5 @@
+import { Search } from "@/components/Search/search";
+
 export function BlogList() {
   return (
     <div className="relative py-10 sm:py-20 mt-7 sm:mt-8">
@@ -12,7 +14,7 @@ export function BlogList() {
             </h2>
           </div>
           <div className="md:mt-0 mt-6 md:w-72 w-full">
-            {/* Componente do Search */}
+            <Search/>
           </div>
         </div>
         <div className="sm:mt-14 mt-6">Conteudo</div>
