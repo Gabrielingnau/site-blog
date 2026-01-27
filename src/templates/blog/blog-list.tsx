@@ -20,7 +20,7 @@ export function BlogList() {
 
   const hasPosts = posts.length > 0;
   return (
-    <div className="relative py-10 sm:py-20 mt-7 sm:mt-8">
+    <div className="py-10 sm:py-20 mt-7 sm:mt-8">
       <div className="mx-auto px-4 sm:px-6 max-w-screen-standard">
         <div className="flex md:flex-row flex-col justify-between md:items-end items-start">
           <div className="flex flex-col gap-3">
