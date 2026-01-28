@@ -12,6 +12,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 import { Avatar } from "@/components/avatar";
+import { Markdown } from "@/components/markdown";
 
 export default function PostPage() {
   const router = useRouter();
@@ -38,7 +39,7 @@ export default function PostPage() {
           </BreadcrumbList>
         </Breadcrumb>
 
-        <div className="grid grid-cols-1 lg: grid-col-[1fr_300px] gap-6 lg:gap-12">
+        <div className="grid grid-cols-1 lg: grid-col-[1fr_300px] gap-6 lg:gap-12 mt-8">
           <article className="bg-gray-600 rounded-lg overflow-hidden border-gray-400 border-[1px]">
             <figure className="relative aspect-[16/10] w-full overflow-hidden rounded-lg">
               <Image
@@ -50,7 +51,7 @@ export default function PostPage() {
               />
             </figure>
             <header className="p-4 md:p-6 lg:p-12 pb-0">
-              <h1 className="mb-6 text-balance text-lg md:text-xl">
+              <h1 className="mb-8 mt-8 text-balance text-lg md:text-xl">
                 {post?.title}
               </h1>
 
@@ -70,6 +71,10 @@ export default function PostPage() {
                 </Avatar.Content>
               </Avatar.Container>
             </header>
+
+            <div className="px-4 mt-12 md:px-6 lg:px-16">
+              <Markdown content={post?.body.raw ?? ''}/>
+            </div>
           </article>
         </div>
       </div>

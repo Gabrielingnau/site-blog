@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 
 import { Search } from "@/components/Search";
 
-import { PostCard } from "./components/post-card";
+import { PostCard } from "./components/post-car";
 import { PostGridCard } from "./components/post-grid-card";
 
 export function BlogList() {

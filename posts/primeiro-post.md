@@ -17,19 +17,19 @@ Com nossa plataforma intuitiva, você pode criar um site profissional para sua l
 
 ## O que nossa plataforma oferece
 
-- **Loja responsiva**  
+- **Loja responsiva**:  
   Sua loja estará otimizada para todos os dispositivos, garantindo uma experiência de compra perfeita em qualquer tela.
 
-- **Gestão de inventário**  
+- **Gestão de inventário**: 
   Organize seus produtos com facilidade e mantenha o controle sobre o estoque de sua loja.
 
-- **Formas de pagamento**  
+- **Formas de pagamento**:  
   Aceite pagamentos de forma rápida e segura com várias opções de gateways de pagamento.
 
-- **SEO e Marketing**  
+- **SEO e Marketing**:  
   Nossa plataforma já vem com ferramentas de SEO integradas para ajudar sua loja a ser encontrada mais facilmente nos motores de busca.
 
-- **Suporte especializado**  
+- **Suporte especializado**:  
   Nossa equipe de suporte está sempre disponível para ajudar você com qualquer dúvida ou desafio.
 
 ## Pronto para vender online?
