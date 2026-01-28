@@ -6,15 +6,18 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { allPosts } from "contentlayer/generated";
+import { format, parseISO } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
+import { Avatar } from "@/components/avatar";
+
 export default function PostPage() {
   const router = useRouter();
   const slug = router.query.slug as string;
-  const post = allPosts.find((post) =>
-    post.slug.toLocaleLowerCase() === slug.toLocaleLowerCase(),
+  const post = allPosts.find(
+    (post) => post.slug.toLocaleLowerCase() === slug.toLocaleLowerCase(),
   );
   return (
     <main className="py-10 sm:py-20 mt-7 sm:mt-8">
@@ -39,13 +42,34 @@ export default function PostPage() {
           <article className="bg-gray-600 rounded-lg overflow-hidden border-gray-400 border-[1px]">
             <figure className="relative aspect-[16/10] w-full overflow-hidden rounded-lg">
               <Image
-                alt={post?.title ?? "Úsuario"}
+                alt={post?.title ?? "Imagem do Post"}
                 src={post?.image ?? ""}
                 priority
                 fill
                 className="object-cover"
               />
             </figure>
+            <header className="p-4 md:p-6 lg:p-12 pb-0">
+              <h1 className="mb-6 text-balance text-lg md:text-xl">
+                {post?.title}
+              </h1>
+
+              <Avatar.Container>
+                <Avatar.Image
+                  alt={post?.title ?? "Úsuario"}
+                  src={post?.author.avatar ?? ""}
+                  width={36}
+                  height={36}
+                />
+                <Avatar.Content>
+                  <Avatar.Title>{post?.author.name}</Avatar.Title>
+                  <Avatar.Description>
+                    Publicado em{" "}
+                    {format(parseISO(post?.date ?? ""), "dd/MM/yyyy")}
+                  </Avatar.Description>
+                </Avatar.Content>
+              </Avatar.Container>
+            </header>
           </article>
         </div>
       </div>

@@ -48,7 +48,9 @@ npm run dev
 * [ShadcnUi](https://ui.shadcn.com) - Um conjunto de componentes lindamente projetados    
 * [Tailwindcss](https://tailwindcss.com) - Uma estrutura CSS de utilidade-first com classes
 * [Typescript](https://www.typescriptlang.org/) - Sintaxe para tipos 
-* [Contentlayer](https://contentlayer.dev) - valida e transforma seu conteúdo em Tipo Dados JSON 
+* [Contentlayer](https://contentlayer.dev) - Valida e transforma seu conteúdo em Tipo Dados JSON 
+* [ReactMarkdown](https://github.com/remarkjs/react-markdown) - Componente que renderiza markdown
+* [RemarkGfm](https://github.com/remarkjs/remark-gfm) - plugin de observação para suportar GFM
 
 ---
 # ⌨️ com ❤️ por [Gabriel Lingnau](https://www.linkedin.com/in/gabriel-lingnau-3bb17b266/)

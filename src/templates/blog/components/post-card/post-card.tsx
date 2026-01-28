@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { Avatar } from "@/components/avatar";
+
 type Author = {
   name: string;
   avatar: string;
-}
+};
 
 type PostCardProps = {
   slug: string;
@@ -13,9 +15,16 @@ type PostCardProps = {
   title: string;
   description: string;
   author: Author;
-}
+};
 
-export function PostCard({ slug, date, image, title, description, author }: PostCardProps) {
+export function PostCard({
+  slug,
+  date,
+  image,
+  title,
+  description,
+  author,
+}: PostCardProps) {
   return (
     <Link
       href={`/blog/${slug}`}
@@ -39,26 +48,26 @@ export function PostCard({ slug, date, image, title, description, author }: Post
 
         <div className="p-2 flex flex-col items-start h-full justify-between gap-3">
           <div className="space-y-2">
-            <h2 className="text-xs text-gray-100 line-clamp-2">
-              {title}
-            </h2>
+            <h2 className="text-xs text-gray-100 line-clamp-2">{title}</h2>
             <p className="text-body-xs text-gray-300 line-clamp-3">
               {" "}
               {description}
             </p>
           </div>
 
-          <div className="w-full flex items-center justify-start border-t border-gray-400
-           group-hover:border-blue-300 transition-colors duration-200 pt-3 gap-2">
-            <div className="relative w-5 h-5 border border-blue-300 rounded-full">
-              <Image
-                alt="Úsuario"
+          <div
+            className="w-full flex items-center justify-start border-t border-gray-400
+           group-hover:border-blue-300 transition-colors duration-200 pt-3 gap-2"
+          >
+            <Avatar.Container>
+              <Avatar.Image
+                alt={title}
                 src={author.avatar}
-                fill
-                className="object-cover object-center"
+                width={20}
+                height={20}
               />
-            </div>
-            <span className="text-body-xs text-gray-300">{author.name}</span>
+              <Avatar.Description>{author.name}</Avatar.Description>
+            </Avatar.Container>
           </div>
         </div>
       </div>
