@@ -12,8 +12,6 @@ import Link from "next/link";
 
 import { Avatar } from "@/components/avatar";
 import { Markdown } from "@/components/markdown";
-import { Button } from "@/components/ui/button";
-import { useShare } from "@/hooks";
 
 import { PostShare } from "./components/post-share/post-share";
 
