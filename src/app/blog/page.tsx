@@ -12,6 +12,17 @@ export const metadata: Metadata = {
     title: "Blog — Dicas para Criar e Escalar Projetos Digitais",
     description:
       "Conteúdos sobre desenvolvimento, negócios e estratégias para crescer no digital.",
+    type: "website",
+    locale: "pt_BR",
+    siteName: "SiteBlog",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "SiteBlog - Plataforma para afiliados",
+      },
+    ],
   },
 };
 
